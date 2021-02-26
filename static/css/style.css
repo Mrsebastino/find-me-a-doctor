@@ -6,12 +6,6 @@
   margin-bottom: 2em;
 }
 
-/* remove the info window over the user location*/
-.gm-style .gm-style-iw-t {
-    display: none;
-}
-
-
 
 body {
   background-color: #515278;

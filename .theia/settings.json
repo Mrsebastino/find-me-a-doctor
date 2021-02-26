@@ -20,5 +20,8 @@
       "**/core.python*": true
    },
 "emmet.extensionsPath": ".theia",
-"python.pythonPath": "/home/gitpod/.pyenv/versions/3.8.8/bin/python"
+"python.pythonPath": "/home/gitpod/.pyenv/versions/3.8.8/bin/python",
+"cSpell.words": [
+    "tabindex"
+]
 }

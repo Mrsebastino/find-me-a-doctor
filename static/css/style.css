@@ -1,7 +1,8 @@
-div#map {
+#map {
  text-align: center;
-  width: auto;
+ width: 100%;
   min-height: 400px;
+  margin-top: 2em;
   margin-bottom: 2em;
 }
 
@@ -10,14 +11,18 @@ div#map {
     display: none;
 }
 
-/* Optional: Makes the sample page fill the window. */
+/* Optional: Makes the sample page fill the window. 
 html,
 body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
+*/
 
+.navbar {
+    background-color: #1c1c3b;
+}
 .custom-map-control-button {
   appearance: button;
   background-color: #fff;

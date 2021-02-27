@@ -28,14 +28,14 @@ function getLocation() {
         lat: position.coords.latitude,
         lng: position.coords.longitude
       };
-      console.log("getLocation:" + pos.lat + "," + pos.lng);
+     // console.log("getLocation:" + pos.lat + "," + pos.lng);
       let marker = new google.maps.Marker({
         position: pos,
         map: map,
         icon: "http://maps.google.com/mapfiles/ms/micons/blue.png"
       })
       infoWindow.setPosition(pos);
-      infoWindow.setContent('Location found.');
+      infoWindow.setContent('Your Location');
       infoWindow.open(map);
       map.setCenter(pos);
       getNearByPlaces(pos);
@@ -53,7 +53,7 @@ function getLocation() {
 }
 
 function getNearByPlaces(pos) {
-  console.log("getNearByPlaces:" + pos.lat + "," + pos.lng);
+ // console.log("getNearByPlaces:" + pos.lat + "," + pos.lng);
   request = {
     location: pos,
     radius: '5000',
@@ -94,7 +94,8 @@ function createMarker(place) {
   });
 
   google.maps.event.addListener(marker, 'click', function() {
-    infowindow.setContent(place.name);
+    let bookingForm = `<div>${place.name}</div><form action="bookAppointment"><label for="fname">Name:</label><input type="text" id="fname" name="fname"><br>` + `<label for="email">Email address:</label><input type="email" id="email" name="email"></form><br>` + `<div class="btn-book btn-primary" type="submit">Book Appointment</div>` 
+    infowindow.setContent(bookingForm);
     infowindow.open(map, this);
   });
   return marker;

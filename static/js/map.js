@@ -16,8 +16,7 @@ function initMap() {
   infoWindow = new google.maps.InfoWindow;
 
   getLocation();
-  // getNearByPlaces();
-  // callback();
+
 }
 
 function getLocation() {
@@ -90,12 +89,13 @@ function createMarker(place) {
   let marker = new google.maps.Marker({
     map: map,
     position: place.geometry.location,
-    icon: "http://maps.google.com/mapfiles/ms/micons/red.png"
+    icon: "http://maps.google.com/mapfiles/ms/micons/red.png",
+    animation: google.maps.Animation.DROP,
   });
 
   google.maps.event.addListener(marker, 'click', function() {
-    let bookingForm = `<div>${place.name}</div><form action="bookAppointment"><label for="fname">Name:</label><input type="text" id="fname" name="fname"><br>` + `<label for="email">Email address:</label><input type="email" id="email" name="email"></form><br>` + `<div class="btn-book btn-primary" type="submit">Book Appointment</div>` 
-    infowindow.setContent(bookingForm);
+    let booking = `<div class="info-window"><h3>${place.name}</h3></div>` + `<p>${place.formatted_address}</p>` + `<div class="btn-book btn-primary m-auto" type="submit">Book Appointment</div>` 
+    infowindow.setContent(booking);
     infowindow.open(map, this);
   });
   return marker;

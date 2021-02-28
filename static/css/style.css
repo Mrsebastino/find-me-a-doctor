@@ -1,21 +1,24 @@
 #map {
- text-align: center;
- width: 100%;
+  text-align: center;
+  width: 100%;
   min-height: 800px;
   margin-top: 2em;
   margin-bottom: 2em;
 }
 
-
 body {
   background-color: #515278;
 }
+
+/* NavBar  */
+
 .navbar-brand {
     font-family: Lato, sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.4em;
 }
+
 .navbar .nav-link {
     font-family: Lato, sans-serif;
     font-size: 18px;
@@ -23,9 +26,13 @@ body {
     line-height: 1.4em;
     text-transform: none;
 }
+
 .navbar {
     background-color: #1c1c3b;
 }
+
+/* Map */
+
 .custom-map-control-button {
   appearance: button;
   background-color: #fff;
@@ -39,6 +46,20 @@ body {
   font: 400 18px Roboto, Arial, sans-serif;
   overflow: hidden;
 }
+
 .custom-map-control-button:hover {
   background: #ebebeb;
+}
+
+.info-window {
+    height: auto;
+    width: auto;
+    font-family: Lato, sans-serif;
+}
+
+.btn-book{
+    padding-top: 10px;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
 }

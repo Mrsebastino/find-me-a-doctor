@@ -94,7 +94,8 @@ function createMarker(place) {
   });
 
   google.maps.event.addListener(marker, 'click', function() {
-    let booking = `<div class="info-window"><h3>${place.name}</h3></div>` + `<p>${place.formatted_address}</p>` + `<div class="btn-book btn-primary m-auto" type="submit">Book Appointment</div>` 
+    let booking = `<div class="info-window"><h3>${place.name}</h3></div><p>
+    ${place.formatted_address}</p><div><button class="btn-book btn-primary m-auto" method="POST" type="submit" href="{{url_for('booking_form')}}">Book Appointment</button></div>` 
     infowindow.setContent(booking);
     infowindow.open(map, this);
   });

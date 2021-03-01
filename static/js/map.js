@@ -52,7 +52,7 @@ function getLocation() {
 }
 
 function getNearByPlaces(pos) {
- // console.log("getNearByPlaces:" + pos.lat + "," + pos.lng);
+  console.log("getNearByPlaces:" + pos.lat + "," + pos.lng);
   request = {
     location: pos,
     radius: '5000',

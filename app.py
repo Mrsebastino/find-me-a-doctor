@@ -12,13 +12,12 @@ def home():
     return render_template("index.html")
 
 
-@app.route('/booking_form', methods=['GET', 'POST'])
+@app.route('/booking_form')
 def booking_form():
-    if request.method == 'POST':
-        return render_template("booking_form.html")
+    return render_template("booking_form.html")
 
 
 if __name__ == '__main__':
-    app.run(host=os.environ.get('IP'),
-            port=int(os.environ.get('PORT')),
+    app.run(host=os.environ.get('IP', "0.0.0.0"),
+            port=int(os.environ.get('PORT', "8080")),
             debug=True)

@@ -21,10 +21,10 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
       <ul class="navbar-nav mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active text-info" aria-current="page" href="#">Find a Doctor</a>
+          <a class="nav-link active text-info" aria-current="page" href="{{ url_for('home')}}">Find a Doctor</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-info" href="#">Service</a>
+          <a class="nav-link text-info" href="{{url_for('booking_form')}}">Service</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-info" href="#">Care Plan</a>
@@ -41,9 +41,9 @@
 </nav>
 </header>
     <main>
-        {% block content %} {% endblock %}
+        
     </main>
-
+{% block content %} {% endblock %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>

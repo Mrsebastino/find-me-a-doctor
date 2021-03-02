@@ -6,18 +6,19 @@
 <div class="container-fluid text-center mt-5">
     <div class="row">
     <div class="col-6 booking-detail">
-        <form action="{{url_for('booking_form')}}">
+        <form action="{{url_for('appointment_booked')}}" method="POST">
             <h3>Doctor's Name</h3>
             <p>Doctor's address</p>
             <div></div>
             <label for="fullname">Full Name:</label>
-            <input type="text" id="fullname" name="fullname"><br>
+            <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Enter Full Name" required><br>
             <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email"><br>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email" required><br>
             <label for="date">Date:</label>
-            <input type="date" id="date" name="date"><br>
+            <input type="date" class="form-control" id="date" name="date" required><br>
             <label for="time">Time:</label>
-            <input type="time" id="time" name="time"><br>
+            <input type="time" class="form-control" id="time" name="time" required><br>
+            <button class="btn-book btn-primary" type="submit" name="action">Book Appointment</button>
         </form>
     </div>
     </div>

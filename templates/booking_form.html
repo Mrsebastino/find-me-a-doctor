@@ -6,8 +6,18 @@
 <div class="container-fluid text-center mt-5">
     <div class="row">
     <div class="col-6 booking-detail">
-        <form action="{{url_for('booking_form')}}" method="GET">
-            <h3>Hello World</h3>
+        <form action="{{url_for('booking_form')}}">
+            <h3>Doctor's Name</h3>
+            <p>Doctor's address</p>
+            <div></div>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname"><br>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email"><br>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date"><br>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time"><br>
         </form>
     </div>
     </div>

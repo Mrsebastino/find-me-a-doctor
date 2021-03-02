@@ -57,19 +57,30 @@ body {
     font-family: Lato, sans-serif;
 }
 
-.btn-book{
-    padding-top: 10px;
-    width: 100px;
-    height: 50px;
-    border-radius: 10px;
-}
 
 /* Booking Form */
 
 .booking-detail {
     margin-left: 600px;
-    height: 400px;
+    height: fit-content;
     width: 100px;
     background-color: #fff;
 
+}
+
+.btn-book{
+    border-radius: 10px;
+    padding: 10px 0;
+    width: fit-content;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.confirmed-booking {
+    height: 200px;
+    width: fit-content;
+    text-align: center;
+    font-family: lato, sans-serif;
+    font-weight: 400;
+    font-size: 28px;
 }

@@ -94,7 +94,7 @@ function createMarker(place) {
   });
 
   google.maps.event.addListener(marker, 'click', function() {
-    let booking = `<form action="{{ url_for('booking_form') }}" method="POST" name="bookingForm" id="booking_id"><div class="info-window"><h3>${place.name}</h3></div><p>
+    let booking = `<div class="info-window"><h3>${place.name}</h3></div><p>
     ${place.formatted_address}</p><div><button class="btn-book btn-primary m-auto" type="submit" name="action">Book Appointment</button></div></form>` 
     infowindow.setContent(booking);
     infowindow.open(map, this);

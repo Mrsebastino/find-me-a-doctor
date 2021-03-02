@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for, request
+from flask import Flask, render_template, url_for, request, redirect
 
 import os
 
@@ -17,9 +17,15 @@ def booking_form():
     return render_template("booking_form.html")
 
 
-@app.route('/appointment_booked')
+@app.route('/appointment_booked', methods=["GET", "POST"])
 def appointment_booked():
-    return render_template("appointment_booked.html")
+    if request.method == "POST":
+        req = request.form
+        fullname = req.get("fullname")
+        email = req.get("email")
+        date = req.get("date")
+        time = req.get("time")
+    return render_template("appointment_booked.html", req=req)
 
 
 if __name__ == '__main__':

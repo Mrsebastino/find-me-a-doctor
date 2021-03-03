@@ -3,7 +3,7 @@
 ### This project is part of a technical interview challenge
 ---
  Click here for a live demo
- [Find me a Doctor](https://mrsebastino.github.io/find-me-a-doctor/ "Find me a Doctor")
+ [Find me a Doctor](https://find-me-a-doctor.herokuapp.com/ "Find me a Doctor")
 
 ### Local deployment
  To run this project you will need:

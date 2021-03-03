@@ -18,6 +18,6 @@
 2. Or you can save a copy of this directory by clicking the green button " Clone or download" then "Download Zip" and after that extract the Zip file to your folder, change the directory to the directory file location you just created.
 
 3. In the terminal if you don't already have Flask type `pip3 install flask`,
-now install  requirements.text `pip3 freeze --local > requirements.txt.
+now install  requirements.text `pip3 freeze --local > requirements.txt.`
 
 4. To run the project locally, type in the terminal `python3 app.py`

@@ -14,7 +14,7 @@ function initMap() {
     zoom: 6
   });
   infoWindow = new google.maps.InfoWindow;
-
+ 
   getLocation();
 
 }

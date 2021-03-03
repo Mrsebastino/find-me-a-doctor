@@ -5,7 +5,7 @@
  Click here for a live demo
  [Find me a Doctor](https://mrsebastino.github.io/find-me-a-doctor/ "Find me a Doctor")
 
- ### Local deployment
+### Local deployment
  To run this project you will need:
   * An IDE   [GitPod](https://www.gitpod.io/)
 
